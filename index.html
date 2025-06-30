@@ -97,9 +97,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/css/app.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="css.css" />
   </head>
 
   <body class="">
@@ -258,10 +263,14 @@
             <li class="menu-item-has-children"
               ><a href="#">Services</a>
               <ul class="sub-menu">
-                <li><a href="agency.html">Land of agriculture </a></li>
-                <li><a href="agency-details.html">Farm</a></li>
-                <li><a href="agency-details.html">Apartment </a></li>
-                <li><a href="agency-details.html">Commercial </a></li>
+                <li
+                  ><a href="land-of-agriculture.html"
+                    >Land of agriculture
+                  </a></li
+                >
+                <li><a href="farm.html">Farm</a></li>
+                <li><a href="apartment.html">Apartment </a></li>
+                <li><a href="commercial.html">Commercial </a></li>
               </ul>
             </li>
             <li class=""><a href="">Blog</a> </li>
@@ -354,13 +363,16 @@
                     <li class="menu-item-has-children"
                       ><a href="#">Services</a>
                       <ul class="sub-menu">
-                        <li><a href="agency.html">Land of agriculture </a></li>
-                        <li><a href="agency-details.html">Farm</a></li>
-                        <li><a href="agency-details.html">Commercial </a></li>
-                        <li><a href="agency-details.html">Apartment </a></li>
+                        <li
+                          ><a href="land-of-agriculture.html"
+                            >Land of agriculture
+                          </a></li
+                        >
+                        <li><a href="farm.html">Farm</a></li>
+                        <li><a href="commercial.html">Commercial </a></li>
+                        <li><a href="apartment.html">Apartment </a></li>
                       </ul>
                     </li>
-
                     <li><a href="blog.html">Blog</a> </li>
                     <li><a href="contact.html">Contact Us</a></li>
                   </ul> </nav
@@ -2674,11 +2686,8 @@
                   border-radius: 20px;
                 "
               >
-                <iframe
-                  src="https://www.youtube.com/embed/_yhE9Wo-OtQ"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                <video
+                  controls
                   style="
                     position: absolute;
                     top: 0;
@@ -2686,9 +2695,12 @@
                     width: 100%;
                     height: 100%;
                     border-radius: 20px;
+                    object-fit: cover;
                   "
                 >
-                </iframe>
+                  <source src="video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
@@ -4002,6 +4014,19 @@
           "
         ></path></svg
     ></div>
+    <!-- Floating Buttons Wrapper -->
+    <div class="floating-buttons">
+      <!-- WhatsApp Button -->
+      <a href="https://wa.link/pyeatp" target="_blank" class="cta-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <!-- Call Button -->
+      <a href="tel:+91-8171608888" class="cta-btn call">
+        <i class="fa fa-phone"></i>
+      </a>
+    </div>
+
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
